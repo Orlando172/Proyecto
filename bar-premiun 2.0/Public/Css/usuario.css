@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #020302;
+    color: white;
+    padding: 1em 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 0.5em 1em;
+}
+
+nav ul li a:hover {
+    background-color: #020302;
+    border-radius: 5px;
+}
+
+.button {
+    background-color: #020302;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.button:hover {
+    background-color: #020302;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2em auto;
+    background-color: white;
+    padding: 2em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+
+.user-form label {
+    display: block;
+    font-weight: bold;
+}
+
+.user-form input {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.user-form button {
+    grid-column: span 2;
+    padding: 0.5em;
+    border: none;
+    background-color: #020302;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.user-form button:hover {
+    background-color: #020302;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2em;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 1em;
+    text-align: left;
+}
+
+th {
+    background-color: #060706;
+    color: white;
+}
+
+td form {
+    margin: 0;
+}
+
+td form button {
+    padding: 0.5em 1em;
+    border: none;
+    background-color: #f44336;
+
+    color: white;
+    font-size: 0.9em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+td form button:hover {
+    background-color: #e53935;
+}
+
+td form button[name="accion"][value="editar"] {
+    background-color: #2196F3;
+}
+
+td form button[name="accion"][value="editar"]:hover {
+    background-color: #1e88e5;
+}
